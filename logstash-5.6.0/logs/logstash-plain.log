@@ -1,0 +1,51 @@
+[2018-07-11T19:13:07,858][INFO ][logstash.modules.scaffold] Initializing module {:module_name=>"fb_apache", :directory=>"D:/ELK/logstash-5.6.0/modules/fb_apache/configuration"}
+[2018-07-11T19:13:07,878][INFO ][logstash.modules.scaffold] Initializing module {:module_name=>"netflow", :directory=>"D:/ELK/logstash-5.6.0/modules/netflow/configuration"}
+[2018-07-11T19:13:09,698][INFO ][logstash.outputs.elasticsearch] Elasticsearch pool URLs updated {:changes=>{:removed=>[], :added=>[http://127.0.0.1:9200/]}}
+[2018-07-11T19:13:09,698][INFO ][logstash.outputs.elasticsearch] Running health check to see if an Elasticsearch connection is working {:healthcheck_url=>http://127.0.0.1:9200/, :path=>"/"}
+[2018-07-11T19:13:10,028][WARN ][logstash.outputs.elasticsearch] Restored connection to ES instance {:url=>"http://127.0.0.1:9200/"}
+[2018-07-11T19:13:10,028][INFO ][logstash.outputs.elasticsearch] Using mapping template from {:path=>nil}
+[2018-07-11T19:13:10,118][INFO ][logstash.outputs.elasticsearch] Attempting to install template {:manage_template=>{"template"=>"logstash-*", "version"=>50001, "settings"=>{"index.refresh_interval"=>"5s"}, "mappings"=>{"_default_"=>{"_all"=>{"enabled"=>true, "norms"=>false}, "dynamic_templates"=>[{"message_field"=>{"path_match"=>"message", "match_mapping_type"=>"string", "mapping"=>{"type"=>"text", "norms"=>false}}}, {"string_fields"=>{"match"=>"*", "match_mapping_type"=>"string", "mapping"=>{"type"=>"text", "norms"=>false, "fields"=>{"keyword"=>{"type"=>"keyword", "ignore_above"=>256}}}}}], "properties"=>{"@timestamp"=>{"type"=>"date", "include_in_all"=>false}, "@version"=>{"type"=>"keyword", "include_in_all"=>false}, "geoip"=>{"dynamic"=>true, "properties"=>{"ip"=>{"type"=>"ip"}, "location"=>{"type"=>"geo_point"}, "latitude"=>{"type"=>"half_float"}, "longitude"=>{"type"=>"half_float"}}}}}}}}
+[2018-07-11T19:13:10,148][INFO ][logstash.outputs.elasticsearch] New Elasticsearch output {:class=>"LogStash::Outputs::ElasticSearch", :hosts=>["//127.0.0.1:9200"]}
+[2018-07-11T19:13:10,148][INFO ][logstash.pipeline        ] Starting pipeline {"id"=>"main", "pipeline.workers"=>4, "pipeline.batch.size"=>125, "pipeline.batch.delay"=>5, "pipeline.max_inflight"=>500}
+[2018-07-11T19:13:10,218][INFO ][logstash.inputs.log4j2   ] Starting Log4j2 input listener {:address=>"127.0.0.1:7000"}
+[2018-07-11T19:13:10,218][INFO ][logstash.inputs.log4j2   ] Log4j input
+[2018-07-11T19:13:10,218][INFO ][logstash.pipeline        ] Pipeline main started
+[2018-07-11T19:13:10,408][INFO ][logstash.agent           ] Successfully started Logstash API endpoint {:port=>9600}
+[2018-07-11T19:13:48,331][INFO ][logstash.inputs.log4j2   ] Accepted connection {:client=>"127.0.0.1:1382", :server=>"127.0.0.1:7000"}
+[2018-07-11T19:13:48,832][INFO ][logstash.inputs.log4j2   ] Closing connection {:client=>"127.0.0.1:1382", :exception=>java.lang.NullPointerException}
+[2018-07-11T19:14:02,743][WARN ][logstash.runner          ] SIGINT received. Shutting down the agent.
+[2018-07-11T19:14:02,753][WARN ][logstash.agent           ] stopping pipeline {:id=>"main"}
+[2018-07-11T19:14:03,443][FATAL][logstash.runner          ] SIGINT received. Terminating immediately..
+[2018-07-11T19:14:46,267][INFO ][logstash.modules.scaffold] Initializing module {:module_name=>"fb_apache", :directory=>"D:/ELK/logstash-5.6.0/modules/fb_apache/configuration"}
+[2018-07-11T19:14:46,277][INFO ][logstash.modules.scaffold] Initializing module {:module_name=>"netflow", :directory=>"D:/ELK/logstash-5.6.0/modules/netflow/configuration"}
+[2018-07-11T19:14:47,197][INFO ][logstash.outputs.elasticsearch] Elasticsearch pool URLs updated {:changes=>{:removed=>[], :added=>[http://127.0.0.1:9200/]}}
+[2018-07-11T19:14:47,197][INFO ][logstash.outputs.elasticsearch] Running health check to see if an Elasticsearch connection is working {:healthcheck_url=>http://127.0.0.1:9200/, :path=>"/"}
+[2018-07-11T19:14:47,347][WARN ][logstash.outputs.elasticsearch] Restored connection to ES instance {:url=>"http://127.0.0.1:9200/"}
+[2018-07-11T19:14:47,347][INFO ][logstash.outputs.elasticsearch] Using mapping template from {:path=>nil}
+[2018-07-11T19:14:47,397][INFO ][logstash.outputs.elasticsearch] Attempting to install template {:manage_template=>{"template"=>"logstash-*", "version"=>50001, "settings"=>{"index.refresh_interval"=>"5s"}, "mappings"=>{"_default_"=>{"_all"=>{"enabled"=>true, "norms"=>false}, "dynamic_templates"=>[{"message_field"=>{"path_match"=>"message", "match_mapping_type"=>"string", "mapping"=>{"type"=>"text", "norms"=>false}}}, {"string_fields"=>{"match"=>"*", "match_mapping_type"=>"string", "mapping"=>{"type"=>"text", "norms"=>false, "fields"=>{"keyword"=>{"type"=>"keyword", "ignore_above"=>256}}}}}], "properties"=>{"@timestamp"=>{"type"=>"date", "include_in_all"=>false}, "@version"=>{"type"=>"keyword", "include_in_all"=>false}, "geoip"=>{"dynamic"=>true, "properties"=>{"ip"=>{"type"=>"ip"}, "location"=>{"type"=>"geo_point"}, "latitude"=>{"type"=>"half_float"}, "longitude"=>{"type"=>"half_float"}}}}}}}}
+[2018-07-11T19:14:47,407][INFO ][logstash.outputs.elasticsearch] New Elasticsearch output {:class=>"LogStash::Outputs::ElasticSearch", :hosts=>["//127.0.0.1:9200"]}
+[2018-07-11T19:14:47,407][INFO ][logstash.pipeline        ] Starting pipeline {"id"=>"main", "pipeline.workers"=>4, "pipeline.batch.size"=>125, "pipeline.batch.delay"=>5, "pipeline.max_inflight"=>500}
+[2018-07-11T19:14:47,437][INFO ][logstash.inputs.log4j2   ] Starting Log4j2 input listener {:address=>"127.0.0.1:7000"}
+[2018-07-11T19:14:47,447][INFO ][logstash.inputs.log4j2   ] Log4j input
+[2018-07-11T19:14:47,447][INFO ][logstash.pipeline        ] Pipeline main started
+[2018-07-11T19:14:47,527][INFO ][logstash.agent           ] Successfully started Logstash API endpoint {:port=>9600}
+[2018-07-11T19:14:54,650][INFO ][logstash.inputs.log4j2   ] Accepted connection {:client=>"127.0.0.1:1455", :server=>"127.0.0.1:7000"}
+[2018-07-11T19:14:54,880][INFO ][logstash.inputs.log4j2   ] Closing connection {:client=>"127.0.0.1:1455", :exception=>java.lang.NullPointerException}
+[2018-07-11T19:15:47,730][WARN ][logstash.runner          ] SIGINT received. Shutting down the agent.
+[2018-07-11T19:15:47,740][WARN ][logstash.agent           ] stopping pipeline {:id=>"main"}
+[2018-07-11T19:15:47,890][FATAL][logstash.runner          ] SIGINT received. Terminating immediately..
+[2018-07-11T19:16:06,313][INFO ][logstash.modules.scaffold] Initializing module {:module_name=>"fb_apache", :directory=>"D:/ELK/logstash-5.6.0/modules/fb_apache/configuration"}
+[2018-07-11T19:16:06,313][INFO ][logstash.modules.scaffold] Initializing module {:module_name=>"netflow", :directory=>"D:/ELK/logstash-5.6.0/modules/netflow/configuration"}
+[2018-07-11T19:16:07,423][INFO ][logstash.outputs.elasticsearch] Elasticsearch pool URLs updated {:changes=>{:removed=>[], :added=>[http://127.0.0.1:9200/]}}
+[2018-07-11T19:16:07,433][INFO ][logstash.outputs.elasticsearch] Running health check to see if an Elasticsearch connection is working {:healthcheck_url=>http://127.0.0.1:9200/, :path=>"/"}
+[2018-07-11T19:16:07,663][WARN ][logstash.outputs.elasticsearch] Restored connection to ES instance {:url=>"http://127.0.0.1:9200/"}
+[2018-07-11T19:16:07,663][INFO ][logstash.outputs.elasticsearch] Using mapping template from {:path=>nil}
+[2018-07-11T19:16:07,723][INFO ][logstash.outputs.elasticsearch] Attempting to install template {:manage_template=>{"template"=>"logstash-*", "version"=>50001, "settings"=>{"index.refresh_interval"=>"5s"}, "mappings"=>{"_default_"=>{"_all"=>{"enabled"=>true, "norms"=>false}, "dynamic_templates"=>[{"message_field"=>{"path_match"=>"message", "match_mapping_type"=>"string", "mapping"=>{"type"=>"text", "norms"=>false}}}, {"string_fields"=>{"match"=>"*", "match_mapping_type"=>"string", "mapping"=>{"type"=>"text", "norms"=>false, "fields"=>{"keyword"=>{"type"=>"keyword", "ignore_above"=>256}}}}}], "properties"=>{"@timestamp"=>{"type"=>"date", "include_in_all"=>false}, "@version"=>{"type"=>"keyword", "include_in_all"=>false}, "geoip"=>{"dynamic"=>true, "properties"=>{"ip"=>{"type"=>"ip"}, "location"=>{"type"=>"geo_point"}, "latitude"=>{"type"=>"half_float"}, "longitude"=>{"type"=>"half_float"}}}}}}}}
+[2018-07-11T19:16:07,733][INFO ][logstash.outputs.elasticsearch] New Elasticsearch output {:class=>"LogStash::Outputs::ElasticSearch", :hosts=>["//127.0.0.1:9200"]}
+[2018-07-11T19:16:07,743][INFO ][logstash.pipeline        ] Starting pipeline {"id"=>"main", "pipeline.workers"=>4, "pipeline.batch.size"=>125, "pipeline.batch.delay"=>5, "pipeline.max_inflight"=>500}
+[2018-07-11T19:16:07,783][INFO ][logstash.inputs.log4j2   ] Starting Log4j2 input listener {:address=>"127.0.0.1:7000"}
+[2018-07-11T19:16:07,783][INFO ][logstash.inputs.log4j2   ] Log4j input
+[2018-07-11T19:16:07,793][INFO ][logstash.pipeline        ] Pipeline main started
+[2018-07-11T19:16:07,893][INFO ][logstash.agent           ] Successfully started Logstash API endpoint {:port=>9600}
+[2018-07-11T19:16:19,994][INFO ][logstash.inputs.log4j2   ] Accepted connection {:client=>"127.0.0.1:1517", :server=>"127.0.0.1:7000"}
+[2018-07-11T19:16:20,286][INFO ][logstash.inputs.log4j2   ] Closing connection {:client=>"127.0.0.1:1517", :exception=>java.lang.NullPointerException}
