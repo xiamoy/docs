@@ -22,3 +22,13 @@
 	 https://blog.csdn.net/qq_18600061/article/details/79025898
 	 https://www.elastic.co/guide/cn/elasticsearch/guide/current/backing-up-your-cluster.html
 	 https://www.cnblogs.com/powpoia/p/6553205.html
+
+ES readonlyrest plugin
+	
+	Download the zip file
+	
+	cd to the Elasticsearch home
+	
+	bin/elasticsearch-plugin install file:///download-folder/readonlyrest-1.16.31_es6.3.0.zip
+	
+	Edit readonlyrest.yml and add your configuration snippets. Also, refer to the official documentation (https://github.com/beshu-tech/readonlyrest-docs/blob/master/elasticsearch.md#rules)
